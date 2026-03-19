@@ -8,7 +8,7 @@ use indicatif::ProgressBar;
 use serde::{Deserialize, Serialize};
 
 #[derive(Parser)]
-#[command(name = "work", about = "Interactive git worktree manager")]
+#[command(name = "work", version, about = "Interactive git worktree manager")]
 struct Cli {
     #[command(subcommand)]
     command: Option<SubCommand>,
